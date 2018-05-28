@@ -95,6 +95,28 @@
 }
 .card-prox{
 	padding:  20px !important;
+	border-radius: 20px;
+	background-color: #C6C1C1;
+	box-shadow: 2px 2px 2px gray;
+
+}
+.card-prox>h3{
+	font-weight: bold;
+	margin: 10px 0px;
+}
+.card-prox:hover .img-prox{
+	filter: grayscale(0%);
+	
+}
+.img-prox{
+	width: 100%;
+	filter: grayscale(100%);
+	border-radius: 50%;
+	transition-property: filter;
+	transition-duration: 0.7s;
+}
+.info-prox{
+	display: none;
 }
 /*Slider*/
 
