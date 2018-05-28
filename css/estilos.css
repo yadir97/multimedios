@@ -89,6 +89,13 @@
 	width: 100%;
 	height: 100%;
 }
+
+.row-prox{
+	height: 80vh;
+}
+.card-prox{
+	padding:  20px !important;
+}
 /*Slider*/
 
 
