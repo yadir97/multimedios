@@ -65,7 +65,7 @@
  }
 
 .row-coleccion{
-	height: 90vh;
+	height: auto;
 }
 .card-coleccion{
 	padding: 20px !important;
@@ -83,16 +83,34 @@
 }
 
 .row-prox{
-	height: 80vh;
+	height: 100vh;
 }
-.card-prox{
-	padding:  20px !important;
-	border-radius: 20px;
-	background-color: #C6C1C1;
-	box-shadow: 2px 2px 2px gray;
+.card-prox-parent{
 
 }
-.card-prox>h3{
+.card-prox{
+	width: 100%;
+
+	padding:  20px !important;
+	border-radius: 20px;
+	background-color: #E8E4E4;
+	box-shadow: 3px 3px 10px gray;
+	transition-property: transform, box-shadow: ;
+	transition-duration: .2s;
+
+}
+.titulo-prox{
+	color: white;
+	font-weight: bold;
+	padding-top: 5%;
+	padding-bottom: 2%;
+	margin-bottom: 5%;
+	background-color:#D88A0A;
+	font-size: 5vw;
+}
+.card-prox>h4{
+	color: #B95914;
+	font-family: sans-serif;
 	font-weight: bold;
 	margin: 10px 0px;
 }
@@ -100,15 +118,22 @@
 	filter: grayscale(0%);
 
 }
+
+.card-prox:hover{
+	transform: scale(1.05);
+	box-shadow: 3px 3px 3px gray;
+}
 .img-prox{
 	width: 100%;
-	filter: grayscale(100%);
+	filter: grayscale(50%);
 	border-radius: 50%;
 	transition-property: filter;
 	transition-duration: 0.7s;
 }
 .info-prox{
 	display: none;
+	border-radius: 5px;
+	background-color: #E9E4E4;
 }
 .footer{
 		background-color: #2a2a2a;
@@ -139,7 +164,26 @@
 	height: 60%;
 	float: right;
 }
+
 /*Slider*/
 
 
 /**/
+/*Clases Especiale*/
+.ocultar{}
+/************/
+@media (max-width: 767px){
+	.card-prox{
+		margin-bottom: 5%;
+	}
+	.ocultar{
+		display: none;
+	}
+}
+@media (max-width: 500px){
+	#slider{
+		display: none;
+	}
+}
+
+

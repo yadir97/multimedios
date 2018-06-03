@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width,user-scalable=no">
 	<title>Tienda Online</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -26,9 +27,11 @@
 							<li class="nav-item"><a class="nav-link" href="">Nosotros</a></li>
 							<li class="nav-item"><a class="nav-link" href="">Contacto</a></li>
 						</ul>
+						
 					</div>
+					
 				</div>
-				<div class="row">
+				<div id="slider" class="row">
 					<div class="col-sm-12">
 						<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
 						  <div class="carousel-inner">
@@ -47,15 +50,15 @@
 				</div>
 
 				<div class="row row-coleccion">
-					<div class="col-sm-6">
+					<div class="col-md-6 col-lg-6 ocultar" style="padding: 0px !important;">
 						<img class="img-coleccion" src="img/casual.jpg" alt="">
 					</div>
-					<div class="col-sm-6 text-center  card-coleccion" style="background-color: #E1589C;">
+					<div class="col-sm-12 col-md-6 col-lg-6 text-center  card-coleccion" style="background-color: #E1589C;">
 
 						<section style="background-color: #D12893; ">
 							<h2 class="text-uppercase">Colección ropa <br> casual</h2>
 							<hr>
-						    <p class="text-center">
+						    <p class="text-center" style="font-size: 1em;">
 						    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -69,12 +72,12 @@
 				</div>
 
 				<div class="row row-coleccion">
-					<div class="col-sm-6 text-center  card-coleccion" style="background-color: #28B0D6;">
+					<div class="col-sm-12 col-md-6 col-lg-6 text-center  card-coleccion" style="background-color: #28B0D6;">
 
 						<section style="background-color: #25A5C9;">
 							<h2 class="text-uppercase">Colección ropa <br> deportiva</h2>
 							<hr>
-						    <p class="text-center">
+						    <p class="text-center" style="font-size: 1em;">
 						    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -85,58 +88,58 @@
 						    <a class="btn btn-danger" href="">Ver Colección</a>
 						</section>
 					</div>
-					<div class="col-sm-6 ">
+					<div class="col-md-6 col-lg-6 ocultar">
 
 						<img class="img-coleccion" src="img/deportiva.jpg" alt="">
 					</div>
 				</div>
 
-				<div class="row " style="padding: 5% 0%;background-color: #EAE8E8;">
+				<div class="row row-prox justify-content-lg-around justify-content-md-around justify-content-sm-around
+				justify-content-xs-around" style="padding-bottom: 3%;background-color: #E8950C;">
 					<div class="col-sm-12 text-center">
-						<h1 class="text-uppercase" style="margin-bottom: 5%;background-color:#D8CBCB;">¡Proximamente!</h1>
+						<h1 class="text-uppercase titulo-prox" style="">¡Proximamente!</h1>
 					</div>
 
-					<div class="col-sm-4 text-center">
+					<div class="col-xs-9 col-sm-9 col-md-3 col-lg-3 text-center card-prox-parent">
 						<section class="card-prox">
-							<img class="img-circle img-prox" src="img/verano.jpg" alt="">
-							<h3 class="text-uppercase">Verano</h3>
-							<p class="info-prox">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							<img class="img-circle img-prox" src="img/verano.jpeg" alt="">
+							<h4 class="text-uppercase ui-widget-header">Verano</h4>
+							<p class="info-prox ui-widget-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 							consequat. </p>
-							<button id="ver-mas-prox" class="btn btn-primary" onclick="info_prox(0, this);">Ver mas</button>
+							<button id="ver-mas-prox" class="btn btn-danger" onclick="info_prox(0, this);">Ver mas</button>
 						</section>
 
 					</div>
-					<div class="col-sm-4 text-center">
+					<div class="col-xs-9 col-sm-9 col-md-3 col-lg-3 text-center card-prox-parent">
 						<section class="card-prox">
 							<img class="img-circle img-prox" src="img/invierno.jpg" alt="">
-							<h3 class="text-uppercase">Invierno</h3>
-							<p class="info-prox">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							<h4 class="text-uppercase ui-widget-header">Invierno</h4>
+							<p class="info-prox ui-widget-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 							consequat. </p>
-							<button id="ver-mas-prox" class="btn btn-primary" onclick="info_prox(1,this);">Ver mas</button>
+							<button id="ver-mas-prox" class="btn btn-danger" onclick="info_prox(1,this);">Ver mas</button>
 						</section>
 
 					</div>
-					<div class="col-sm-4 text-center">
+					<div class="col-xs-9 col-sm-9 col-md-3 col-lg-3 text-center card-prox-parent">
 						<section class="card-prox">
 							<img class="img-circle img-prox" src="img/skate.jpg" alt="">
-							<h3 class="text-uppercase">Skate</h3>
-							<p class="info-prox">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							<h4 class="text-uppercase ui-widget-header">Skate</h4>
+							<p class="info-prox ui-widget-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 							consequat. </p>
-							<button id="ver-mas-prox" class="btn btn-primary" onclick="info_prox(2,this);">Ver mas</button>
+							<button id="ver-mas-prox" class="btn btn-danger" onclick="info_prox(2,this);">Ver mas</button>
 						</section>
 
 					</div>
 
 				</div>
 
-				<br>
-				<br>
+				
 
 				<div class="row footer">
 					<div class="col-sm-12 text-center">
