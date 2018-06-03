@@ -4,10 +4,11 @@
 .col-sm-12,
 .col-sm-3,
 .col-sm-6{
-	padding: 0px !important;
+padding: 0px !important;
 }
 .header{
 	background-color: #2a2a2a;
+	height: 110px;
 }
 .portada{
 	height: 500px;
@@ -43,7 +44,7 @@
 	height: 100%;
 	transition-property: background-color;
 	transition-duration: 0.4s;
-	padding-top: 35px;
+	padding-top: 40px;
 }
 
 .nav li>a:hover{
@@ -97,7 +98,6 @@
 	box-shadow: 3px 3px 10px gray;
 	transition-property: transform, box-shadow: ;
 	transition-duration: .2s;
-
 }
 .titulo-prox{
 	color: white;
@@ -185,5 +185,3 @@
 		display: none;
 	}
 }
-
-
