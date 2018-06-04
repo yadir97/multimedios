@@ -6,17 +6,21 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-
+	
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript">
+		  $(document).ready(function(){
+		  	$("#coleccion-tabs").tabs();
+		  })
+	</script>
 </head>
 <body>
 	
 		<div class="container-fluid">
 			
-			<div class="row header">
+			<div class="row header" style="margin-bottom: 3%;">
 					<div class="col-sm-3">
 						<img class="logo" src="img/logo2.png" alt="">
 					</div>
@@ -42,12 +46,33 @@
 							<li><a href="#medias"><span>Medias</span></a></li>
 						</ul>
 
-						<div id="licras">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+						<div id="licras" class="" style="">
+							<div class="row justify-content-sm-around">
+								<div class="col-sm-3 card-col-deportiva text-center" style="">
+									<img class="" src="img/licras/1.jpg" alt="">
+									<h4>Adidad-TurnBlack</h4>
+									<label for="talla">Talla</label>
+									<select name="talla">
+										<option value="s">S</option>
+										<option value="m">M</option>
+										<option value="l">L</option>
+									</select>
+
+								</div>
+								<div class="col-sm-3 card-col-deportiva text-center">
+									<img src="img/licras/2.jpg" alt="">
+								</div>
+								<div class="col-sm-3 card-col-deportiva text-center">
+									<img src="img/licras/3.jpg" alt="">
+								</div>
+								<div class="col-sm-3 card-col-deportiva text-center">
+									<img src="img/licras/4.jpg" alt="">
+								</div>
+								<div class="col-sm-3 card-col-deportiva text-center">
+									<img src="img/licras/5.jpg" alt="">
+								</div>
+							</div>
+						</div>
 						
 						<div id="tops">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
