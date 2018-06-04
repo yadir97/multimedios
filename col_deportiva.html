@@ -11,14 +11,66 @@
 	<script type="text/javascript" src="js/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
+		  function abrir_img(i){
+		  
+		  	var titulo = $("#licras>div>div>h4").eq(i).text();
+		  	
+		  	$(".img-col-deportiva-max").eq(i).dialog({
+		  		title: titulo
+		  	});
+		  	$("#contenedor").css({'opacity': '.3','filter':'blur(10px)'});
+		  	$("#contenedor").attr('disabled','disabled');
+		  	$("body").css({'overflow':'hidden','height':'100%'});
+
+		  	$(".img-col-deportiva-max").eq(i).dialog("open");
+		  }
+
+		  function upload_img_col_depor(){
+		  	var num = $('#licras>div>div').length;
+		  	$("#licras>div").append("<div class='col-sm-3 card-col-deportiva text-center' style=''>" + 
+									"<img class='' src='img/licras/5.jpg' alt='' onclick='abrir_img("+num+");'>" +
+									"<h4>Adidas-TurnBlack</h4>"+
+									"<label for='talla'>Talla</label>"+
+									"<select name='talla'>"+
+										"<option value='s'>S</option>"+
+										"<option value='m'>M</option>"+
+										"<option value='l'>L</option>"+
+									"</select>"+
+									"<div class='img-col-deportiva-max text-center'>"+
+										"<div style='width: 100%;'>"+
+											"<img class='' style='width: 50%;' src='img/licras/5.jpg' alt=''>"+
+										"</div>"+
+									"</div>"+
+								"</div>");
+		  }
+
 		  $(document).ready(function(){
 		  	$("#coleccion-tabs").tabs();
+		  	
+		  	upload_img_col_depor();
+		  	
+
+
+		  	$(".img-col-deportiva-max").dialog({
+		  		width: 900,
+		  		height:600,
+		  		autoOpen:false,
+		  		draggable:false,
+		  		resizable:false,
+		  		modal:true,
+		  		close: function(event, ui){
+		  			$("#contenedor").css('opacity','1');
+		  			$("#contenedor").css('filter','blur(0px)');
+		  			$("body").css({'overflow':'auto','height':'auto'});
+		  		}
+		  	});
+
 		  })
 	</script>
 </head>
 <body>
 	
-		<div class="container-fluid">
+		<div id="contenedor" class="container-fluid" enabled="false">
 			
 			<div class="row header" style="margin-bottom: 3%;">
 					<div class="col-sm-3">
@@ -49,7 +101,22 @@
 						<div id="licras" class="" style="">
 							<div class="row justify-content-sm-around">
 								<div class="col-sm-3 card-col-deportiva text-center" style="">
-									<img class="" src="img/licras/1.jpg" alt="">
+									<img class="" src="img/licras/1.jpg" alt="" onclick="abrir_img(0);">
+									<h4>Adidas-TurnBlack</h4>
+									<label for="talla">Talla</label>
+									<select name="talla">
+										<option value="s">S</option>
+										<option value="m">M</option>
+										<option value="l">L</option>
+									</select>
+									<div class="img-col-deportiva-max text-center">
+										<div style="width: 100%;">
+											<img class="" style="width: 50%;" src="img/licras/1.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 card-col-deportiva text-center">
+									<img src="img/licras/2.jpg" alt="" onclick="abrir_img(1);">
 									<h4>Adidad-TurnBlack</h4>
 									<label for="talla">Talla</label>
 									<select name="talla">
@@ -57,20 +124,45 @@
 										<option value="m">M</option>
 										<option value="l">L</option>
 									</select>
+									<div class="img-col-deportiva-max text-center">
+										<div style="width: 100%;">
+											<img class="" style="width: 50%;" src="img/licras/2.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 card-col-deportiva text-center">
+									<img src="img/licras/3.jpg" alt="" onclick="abrir_img(2);">
+									<h4>Adidad-TurnBlack</h4>
+									<label for="talla">Talla</label>
+									<select name="talla">
+										<option value="s">S</option>
+										<option value="m">M</option>
+										<option value="l">L</option>
+									</select>
+									<div class="img-col-deportiva-max text-center">
+										<div style="width: 100%;">
+											<img class="" style="width: 50%;" src="img/licras/3.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 card-col-deportiva text-center">
+									<img src="img/licras/4.jpg" alt="" onclick="abrir_img(3);">
+									<h4>Nike-ScorBlue</h4>
+									<label for="talla">Talla</label>
+									<select name="talla">
+										<option value="s">S</option>
+										<option value="m">M</option>
+										<option value="l">L</option>
+									</select>
+									<div class="img-col-deportiva-max text-center">
+										<div style="width: 100%;">
+											<img class="" style="width: 50%;" src="img/licras/4.jpg" alt="">
+										</div>
+									</div>
+								</div>
 
-								</div>
-								<div class="col-sm-3 card-col-deportiva text-center">
-									<img src="img/licras/2.jpg" alt="">
-								</div>
-								<div class="col-sm-3 card-col-deportiva text-center">
-									<img src="img/licras/3.jpg" alt="">
-								</div>
-								<div class="col-sm-3 card-col-deportiva text-center">
-									<img src="img/licras/4.jpg" alt="">
-								</div>
-								<div class="col-sm-3 card-col-deportiva text-center">
-									<img src="img/licras/5.jpg" alt="">
-								</div>
+								
+
 							</div>
 						</div>
 						

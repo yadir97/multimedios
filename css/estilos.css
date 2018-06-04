@@ -176,6 +176,10 @@ padding: 0px !important;
 }
 
 /*Coleccion Ropa Deportiva*/
+#licras>div>div>div:first-child{
+	width: 100%;
+	
+}
 #licras>div>div>img{
 	width: 70%;
 	
