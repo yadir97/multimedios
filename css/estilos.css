@@ -145,7 +145,7 @@ padding: 0px !important;
 	background-color: #E9E4E4;
 }
 .footer{
-		background-color: #2a2a2a;
+		background-color: white;
 		color: white;
 		padding-top: 20px;
 		padding-bottom: 0px;
@@ -178,7 +178,7 @@ padding: 0px !important;
 /*Coleccion Ropa Deportiva*/
 #licras>div>div>img{
 	width: 70%;
-	
+
 }
 
 .card-col-deportiva{
