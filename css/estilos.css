@@ -47,7 +47,7 @@ padding: 0px !important;
 .nav li>a{
 	color: white;
 	font-family: 'Tajawal', sans-serif !important;
-	font-size: 18px;
+	font-size: 20px;
 	height: 100%;
 	transition-property: background-color;
 	transition-duration: 0.4s;
@@ -84,6 +84,7 @@ padding: 0px !important;
 .card-coleccion>section{
 	border-radius: 10px;
 	height: 100%;padding: 20px;
+
 }
 
 .img-coleccion{
