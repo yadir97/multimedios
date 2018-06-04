@@ -17,9 +17,9 @@ $(document).ready(function() {
     $("#carousel").carousel({
     	interval:3000,
 
-    });
+    })
 
-    $("#coleccion-tabs").tabs();
+    
 
    $(window).resize(function(){
    		if(window.matchMedia('(max-width:370px)').matches){
@@ -46,7 +46,7 @@ $(document).ready(function() {
    });
 
  
-
+ 
 
     
     
