@@ -175,10 +175,20 @@ padding: 0px !important;
 	float: right;
 }
 
-/*Slider*/
+/*Coleccion Ropa Deportiva*/
+#licras>div>div>img{
+	width: 70%;
+	
+}
 
+.card-col-deportiva{
+	border: 1px solid #EAE7E7;
+	border-radius: 3px;
+	margin: 1%;
+	padding: 10px !important;
+}
+/**************************/
 
-/**/
 /*Clases Especiale*/
 .ocultar{}
 /************/
