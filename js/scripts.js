@@ -12,12 +12,14 @@ function info_prox(i,button) {
 
 $(document).ready(function() {
 	
-	  $(".card-prox-parent").hide();
+	$(".card-prox-parent").hide();
 
     $("#carousel").carousel({
     	interval:3000,
 
-    })
+    });
+
+    $("#coleccion-tabs").tabs();
 
    $(window).resize(function(){
    		if(window.matchMedia('(max-width:370px)').matches){
