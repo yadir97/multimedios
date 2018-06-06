@@ -186,10 +186,32 @@ padding: 0px !important;
 }
 
 .card-col-deportiva{
-	border: 1px solid #EAE7E7;
+	border: 2px solid #EAE7E7;
 	border-radius: 3px;
 	margin: 1%;
 	padding: 10px !important;
+}
+.precio-col-depor{
+	background-color: #FC814B !important;
+	font-family: roboto !important;
+	font-size: 1em !important;
+	color: white;
+	font-weight: bold;
+}
+.opciones-dialog{
+	width: 35%;
+	float: left;
+	margin: 0px 0px 0px 40px !important;
+
+}
+.opciones-dialog>li{
+	width: 100%;
+	border:1px solid #BDBBBB;
+	padding: 20px 40px;
+	margin-bottom: 20px;
+}
+.opciones-dialog>li>img{
+	width: 45%;
 }
 /**************************/
 
