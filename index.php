@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8" >
-	<meta name="viewport" content="width=device-width,user-scalable=no">
 	<title>Tienda Online</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
-	<!--Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
-</head>
+	<?php include("head.php") ?>
+
 <body style="">
 	<div class="container-fluid" >
 
 
 				<div class="row header">
+					<div class="col-sm-11 offset-sm-1 text-right" >
+						<span id="username" style="color:black;font-family: sans-serif;font-weight: bold;display: none;"></span>
+					</div>
 					<div class="col-sm-3">
 						<img class="logo" src="img/logo2.png" alt="">
 					</div>
 					<div class="col-sm-6 offset-sm-3">
 						<ul class="nav">
-							<li class="nav-item"><a class="nav-link" href="">Inicio</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>
 							<li class="nav-item"><a class="nav-link" href="">Nosotros</a></li>
 							<li class="nav-item"><a class="nav-link" href="">Contacto</a></li>
 						</ul>
@@ -36,13 +30,13 @@
 						<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
 						  <div class="carousel-inner">
 						    <div class="carousel-item active">
-						      <img class="d-block w-100" src="img/4.jpg" alt="First slide">
+						      <img class="d-block w-100" src="img/5.jpg" alt="First slide">
 						    </div>
 						    <div class="carousel-item">
-						      <img class="d-block w-100" src="img/2.jpeg" alt="Second slide">
+						      <img class="d-block w-100" src="img/6.jpg" alt="Second slide">
 						    </div>
 						    <div class="carousel-item">
-						      <img class="d-block w-100" src="img/3.jpeg" alt="Third slide">
+						      <img class="d-block w-100" src="img/guitar-1139397_1920.jpg" alt="Third slide">
 						    </div>
 						  </div>
 
@@ -60,7 +54,7 @@
 
 				<div class="row row-coleccion" style="margin-bottom: 3%;">
 					<div class="col-md-6 col-lg-6 ocultar" style="">
-						<img class="img-coleccion" src="img/casual.jpg" alt="">
+						<img class="img-coleccion" src="img/girl-1848949_1920.jpg" alt="">
 					</div>
 					<div class="col-sm-12 col-md-6 col-lg-6 text-center  card-coleccion" style="background-color: #F7F9F9;">
 
@@ -99,7 +93,7 @@
 					</div>
 					<div class="col-md-6 col-lg-6 ocultar">
 
-						<img class="img-coleccion" src="img/deportiva.jpg" alt="">
+						<img class="img-coleccion" src="img/girl-1848949_1920.jpg" alt="">
 					</div>
 				</div>
 
@@ -111,8 +105,8 @@
 
 					<div class="col-xs-9 col-sm-9 col-md-3 col-lg-3 text-center card-prox-parent">
 						<section class="card-prox">
-							<img class="img-circle img-prox" src="img/verano.jpeg" alt="">
-							<h4 class="text-uppercase ui-widget-header">Verano</h4>
+							<img class="img-prox" src="img/vw-camper-336606_1920.jpg" alt="">
+							<h4 class="text-uppercase ">Verano</h4>
 							<p class="info-prox ui-widget-content">Esto es una belleza si funca, y Yadir le da a Melber</p>
 							<button id="ver-mas-prox" class="btn btn-danger" onclick="info_prox(0, this);">Ver mas</button>
 						</section>
@@ -120,8 +114,8 @@
 					</div>
 					<div class="col-xs-9 col-sm-9 col-md-3 col-lg-3 text-center card-prox-parent">
 						<section class="card-prox">
-							<img class="img-circle img-prox" src="img/invierno.jpg" alt="">
-							<h4 class="text-uppercase ui-widget-header">Invierno</h4>
+							<img class="img-prox" src="img/monsoon-3443345_1920.jpg" alt="">
+							<h4 class="text-uppercase ">Invierno</h4>
 							<p class="info-prox ui-widget-content">No hay element.style, Paleto </p>
 							<button id="ver-mas-prox" class="btn btn-danger" onclick="info_prox(1,this);">Ver mas</button>
 						</section>
@@ -129,8 +123,8 @@
 					</div>
 					<div class="col-xs-9 col-sm-9 col-md-3 col-lg-3 text-center card-prox-parent">
 						<section class="card-prox">
-							<img class="img-circle img-prox" src="img/skate.jpg" alt="">
-							<h4 class="text-uppercase ui-widget-header">Skate</h4>
+							<img class="img-circle img-prox" src="img/skateboard-331751_1920.jpg" alt="">
+							<h4 class="text-uppercase">Skate</h4>
 							<p class="info-prox ui-widget-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
