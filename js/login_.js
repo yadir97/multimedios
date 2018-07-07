@@ -2,10 +2,10 @@
 			$("#form-registro input[name!='btn-registrar']").val("");
 		}
 		function open_registro(){
-			$("#form-registro").show("slide",1000);
+			$("#row_registro").show("slide",1000);
 		}
 		function open_inicio(){
-			$("#form-inicio").show("fold", 1000);
+			$("#row_inicio").show("fold", 1000);
 		}
 
 		$.validator.addMethod('pattern_pass', function(value,element){
@@ -22,7 +22,7 @@
 
 			$("#registrar-usuario").click(function() {
 
-				$("#form-inicio").hide("fold",1000);
+				$("#row_inicio").hide("fold",1000);
 				setTimeout(function(){open_registro()}, 1200);
 				$("#form-registro input[name='contrasena']").focusin(function(event) {
 					$("#reglas-contrasena").show('slide',500);
@@ -35,7 +35,7 @@
 			});
 
 			$("#back-inicio").click(function(){
-				$("#form-registro").hide("slide",1000);
+				$("#row_registro").hide("slide",1000);
 				setTimeout(function(){open_inicio()}, 1200)
 			});
 
@@ -135,6 +135,8 @@
 									 $.cookie("username", response.user);
 									 $.cookie("tipo",response.tipo);
 									 $.cookie("log", true);
+									 $.cookie("gusto",response.gusto);
+									 $.cookie("already_show",false);
 									location.href='index.php';
 								}else{
 									alert(response.estatus);

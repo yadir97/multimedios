@@ -16,7 +16,7 @@
 	<script type="text/javascript" src="js/login_.js"></script>
 </head>
 
-<body style="background-color:#7F7D7D;">		
+<body style="background-color:#DCDCDC;">		
 	
 		
 		<div id="respuesta" class="content-respuesta text-center">
@@ -25,16 +25,56 @@
 	
 
 
-	<div class="container-fluid" style="padding-top:10%!important;">
+	<div class="container-fluid" style="padding-top:3%!important;">
 				
-				<a href="index.php" title=""><img src="img/logo2.png" alt="" style="width: 10%;position: absolute;top: 5%;left: 5%;"></a>
+				<a href="index.php"  title="" style="position: relative;top: 5%;left:2%;text-decoration: none;"><img style="width: 10%;" src="img/logo_negro.png" alt=""></a>
 		
 
-		<div class="row justify-content-around" style="height: auto">
+		<div id="row_inicio" class="row justify-content-center" style="padding: 2% !important;height: auto;margin:3%;box-shadow: 1px 2px 4px #C7C7C7;background-color: #F6F2F2;border-radius: 5px;">
+			<div class="col-sm-6 content-login text-center" >
+
+				<form id="form-inicio" class="formulario-ingreso" accept-charset="utf-8">
+					<fieldset>
+						<div class="row form-group">
+							<div class="col-sm-4"><label class="login-label text-right" style="">Usuario </label></div>
+							<div class="col-sm-8"><input class="" style="width:90%;" type="text" name="usuario" value="" placeholder=""></div>
+							
+						</div>
+					</fieldset>
+
+					<fieldset style="padding-bottom:5%;">
+						<div class="row form-group">
+							<div class="col-sm-4"><label class="login-label text-right" style="">Contraseña </label></div>
+							<div class="col-sm-8"><input class="" style="width:90%;" type="password" name="password" autocomplete="conf_contrasena"></div>
+						</div>
+						<div class="row align-items-sm-end">
+							<div class="col-sm-4 offset-sm-8"><input id="btn-ingresar" type="submit" name="btn-ingresar" class="btn btn-success" value="Ingresar"></div>
+						</div>
+					</fieldset>
+					<a id="registrar-usuario" href="#" title="">Registrese aquí</a>
+				</form>
+
+
+			</div>
+			<div class="col-sm-4 content-login-photo text-center">
+				<img src="img/user_icon.svg" alt="">
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+		<div id="row_registro" class="row justify-content-center" style="padding: 0% !important;height: auto;margin:3%;box-shadow: 1px 2px 4px #C7C7C7;background-color: #F6F2F2;display: none;border-radius: 5px;">
 			<div class="col-sm-6 content-login text-center" >
 
 				<form id="form-registro" class="formulario-registro"  accept-charset="utf-8">
-					<div style="position: absolute;top: 0;left: 0;width: 100%;height: 9%;border-radius: 5px 5px 0px 0px;background-color:#E0DBDB;"></div>
+					<div style="position: absolute;top: 0;left: 0;width: 100%;height: 6%;border-radius: 5px 5px 0px 0px;"></div>
 					<img id="back-inicio" style="position: absolute;top:2%;left:2%;width: 5%" src="img/flecha_atras.svg" alt="">
 					<fieldset>
 						<div class="row form-group">
@@ -102,7 +142,7 @@
 					</fieldset>
 					<fieldset>
 						<div class="row form-group">
-							<div class="col-sm-4 offset-sm-8">
+							<div class="col-sm-6 offset-sm-6" >
 								<input id="btn-registrar" class="btn btn-primary" type="submit" name="btn-registrar" value="Registrar">
 							</div>
 							
@@ -115,35 +155,21 @@
 
 
 
-				<form id="form-inicio" class="formulario-ingreso" accept-charset="utf-8">
-					<fieldset>
-						<div class="row form-group">
-							<div class="col-sm-4"><label class="login-label text-right" style="">Usuario </label></div>
-							<div class="col-sm-8"><input class="" style="width:90%;" type="text" name="usuario" value="" placeholder=""></div>
-							
-						</div>
-					</fieldset>
-
-					<fieldset style="padding-bottom:5%;">
-						<div class="row form-group">
-							<div class="col-sm-4"><label class="login-label text-right" style="">Contraseña </label></div>
-							<div class="col-sm-8"><input class="" style="width:90%;" type="password" name="password" autocomplete="conf_contrasena"></div>
-						</div>
-						<div class="row align-items-sm-end">
-							<div class="col-sm-4 offset-sm-8"><input id="btn-ingresar" type="submit" name="btn-ingresar" class="btn btn-success" value="Ingresar"></div>
-						</div>
-					</fieldset>
-					<a id="registrar-usuario" href="#" title="">Registrese aquí</a>
-				</form>
-
-
 				
 
 			</div>
-			<div class="col-sm-4 content-login-photo text-center">
-				<img src="img/user_icon.svg" alt="">
+			<div class="col-sm-6 content-login-photo-registro text-center" style="border-radius: 0px 5px 5px 0px;">
+				
 			</div>
+
 		</div>
+
+
+
+
+
+
+
 	</div>
 </body>
 </html>

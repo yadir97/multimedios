@@ -1,6 +1,4 @@
-*{
-	color:#17202A;
-}
+
 
 body{
 
@@ -20,17 +18,15 @@ padding: 0px !important;
 .header{
 	background-color: #FEFEFE;
 	height: auto;
-	
+}
+.header>div:nth-child(1){
+	border-bottom: 1.5px solid #A19F9F;
 }
 .header>div:nth-child(2){
 	background-color: #A19F9F;
 	padding: 1% !important;
 }
-.header>div:nth-child(2)::after{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 100%;
+.header>div:nth-child(3){
 	border-top: 105px solid #A19F9F;
 	border-right: 120px solid transparent; 
 }
@@ -60,20 +56,23 @@ padding: 0px !important;
 .nav li{
 	display: inline-block;
 	float: left;
+	transition-property: background-color,color;
+	transition-duration: 0.4s;
 }
 .nav li>a{
 	color: #2A2A2A;
-	font-family: 'Tajawal', sans-serif !important;
-	font-size: 20px;
-	height: 100%;
-	transition-property: background-color,color;
+	font-family: sans-serif !important;
+	font-size: 1.2em;
+	transition-property: background-color,color,border-radius;
 	transition-duration: 0.4s;
 	padding-top: 40px;
+	padding-bottom: 20%;
 }
 
-.nav li>a:hover{
+.nav li:hover>a{
 	background-color: #A19F9F;
 	color: white;
+	border-radius: 0px 0px 5px 5px;
 }
 
   .carousel-inner  {
@@ -97,7 +96,7 @@ padding: 0px !important;
 .card-coleccion{
 	padding: 20px !important;
 
-	color: white;
+	color: black;
 }
 .card-coleccion>section{
 	border-radius: 10px;
@@ -111,7 +110,7 @@ padding: 0px !important;
 }
 
 .row-prox{
-	height: 120vh;
+	height: 95vh;
 	transition-property: height;
 	transition-duration: 0.5s;
 }
@@ -124,7 +123,7 @@ padding: 0px !important;
 	padding:  20px !important;
 	border-radius: 20px;
 	background-color: #E8E4E4;
-	box-shadow: 3px 3px 10px gray;
+	box-shadow: 2px 2px 3px #b5b4b4;
 	transition-property: transform, box-shadow: ;
 	transition-duration: .2s;
 }
@@ -150,7 +149,7 @@ padding: 0px !important;
 
 .card-prox:hover{
 	transform: scale(1.05);
-	box-shadow: 3px 3px 3px gray;
+	box-shadow: 3px 3px 3px #B5B5B5;
 }
 .img-prox{
 	width: 100%;
@@ -181,7 +180,7 @@ padding: 0px !important;
 	display: inline-block;
 	float: right;
 	width: 100%;
-	margin-right: 20px;
+	margin-right: 15%;
 }
 .redes-Sociales>li{
 	width: 20%;
@@ -198,6 +197,7 @@ padding: 0px !important;
 }
 
 /*Coleccion Ropa Deportiva*/
+
 #licras>div>div>div:first-child{
 	width: 100%;
 	
@@ -208,10 +208,12 @@ padding: 0px !important;
 }
 
 .card-col-deportiva{
-	border: 2px solid #EAE7E7;
-	border-radius: 3px;
-	margin: 1%;
-	padding: 10px !important;
+    border: .5px solid #e0e0e0;
+    border-radius: 3px;
+    margin: 1%;
+    padding: 10px !important;
+    box-shadow: 0.5px 0.5px 1px #c1bebe;
+	
 }
 .precio-col-depor{
 	background-color: #FC814B !important;
@@ -219,6 +221,7 @@ padding: 0px !important;
 	font-size: 1em !important;
 	color: white;
 	font-weight: bold;
+	
 }
 .opciones-dialog{
 	width: 35%;
@@ -235,6 +238,23 @@ padding: 0px !important;
 .opciones-dialog>li>img{
 	width: 45%;
 }
+
+.add-car{
+	position:absolute;
+	top:5%;
+	right:5%;
+	width:20%;
+	padding:1%;
+	background-color:#DED8D8;
+	border-radius:5px;
+	box-shadow:2px 2px 4px #D3CECE;
+	transition-property: background-color;
+	transition-duration: .1s;
+}
+
+.add-car:hover{
+	background-color:#C7C4C4;
+}
 /**************************/
 
 /*Crud_Coleccion*/
@@ -244,6 +264,9 @@ padding: 0px !important;
 	box-shadow: 2px 2px 5px #5C5A5A;
 	min-height: 500px;
 	padding: 1%;
+	margin-bottom: 3%;
+	margin-left: 1%;
+	margin-right: 1%;
 }
 .crud-contenedor>div:first-child{
 	padding: 1%;
@@ -268,9 +291,12 @@ padding: 0px !important;
 	
 }
 form label{
+	width: 95%;
 	font-family: sans-serif;
-	font-weight: bold;
+	text-align: center;
+	
 }
+
 
 form input,
 form select{
@@ -302,27 +328,32 @@ form select{
 	margin-right: 10% !important;
 }
 .content-login-photo{
-	background-color: #FFFFFF;
-	padding: 5% !important;
-	border-radius: 10px;
+	background-color: #F6F2F2;
+	font-family: sans-serif;
+}
+.content-login-photo-registro{
+	background-image: url('../img/office-620817_1280.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	font-family: sans-serif;
 }
 .content-login-photo>img{
 	width: 70%;
-
+	background-color: #F6F2F2;
 }
 .formulario-ingreso{
 	padding: 10% !important;
 	background-color: #F6F2F2;
-	border-radius: 5px;
+	border-radius: 5px 0px 0px 5px;
 	height: 100%;
 }
 .formulario-registro{
-	padding: 10% !important;
+	padding: 5% !important;
 	background-color: #F6F2F2;
-	border-radius: 5px;
+	border-radius: 5px 0px 0px 5px;
 	height: 100%;
-	display: none;
+
 }
 
 .invalid{
@@ -364,6 +395,10 @@ form select{
 	font-size: .8em;
 	text-align: left;
 }
+
+/****************/
+/*Anuncios Plublicitarios*/
+
 
 
 /*************/
